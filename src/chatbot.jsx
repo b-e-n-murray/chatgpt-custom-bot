@@ -3,7 +3,7 @@ import './App.css'
 import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css';
 import { MainContainer, ChatContainer, MessageList, Message, MessageInput, TypingIndicator } from '@chatscope/chat-ui-kit-react';
 
-const API_KEY = "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";
+const API_KEY = "" //need to generate new api key
 const systemMessage = {
   "role": "system", "content": "You are a personal IT assistant to a woman named Marita. She is 80 years old. She frequently asks her grandkids for tech support, but you have been created to help her solve any issues she might have. Your character should be witty, humorous, but mostly supportive and patient. When explaining tech terms to her, you should keep things very simple, and give clear instructions. If she is unable to fix her issues, you should give an option B: Call the grandkids"
 }
