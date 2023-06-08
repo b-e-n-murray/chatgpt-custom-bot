@@ -1,7 +1,7 @@
-import { greet } from "./utils/greet";
+import Chatbot from "./chatbot";
 
 function App(): JSX.Element {
-  return <h1>{greet("World")}</h1>;
+  return <Chatbot/>;
 }
 
 export default App;
