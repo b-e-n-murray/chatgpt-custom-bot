@@ -9,8 +9,8 @@ import {
   MessageInput,
   TypingIndicator,
 } from "@chatscope/chat-ui-kit-react";
+import API_KEY from "./api-key";
 
-const API_KEY = "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"; //need to generate new api key
 const systemMessage = {
   role: "system",
   content: `You are a personal IT assistant to a woman named Marita.
@@ -103,29 +103,32 @@ function App() {
   }
 
   return (
-    <div className="chatbot-page">
+    <>
       <h1 className="app-header">Ask Ferrett</h1>
-      <img src="https://easydrawingguides.com/wp-content/uploads/2020/12/Ferret-Step-10.png" className="ferret-img" alt="ferret"></img>
-      <div style={{ position: "relative", height: "500px", width: "700px" }}>
-        <MainContainer>
-          <ChatContainer>
-            <MessageList
-              scrollBehavior="smooth"
-              typingIndicator={
-                isTyping ? (
-                  <TypingIndicator content="Ferrett is typing" />
-                ) : null
-              }
-            >
-              {messages.map((message, i) => {
-                return <Message key={i} model={message} className="typing-text"/>;
-              })}
-            </MessageList>
-            <MessageInput placeholder="Type message here" onSend={handleSend} />
-          </ChatContainer>
-        </MainContainer>
+      <div className="chatbot-page">
+        <img src="https://easydrawingguides.com/wp-content/uploads/2020/12/Ferret-Step-10.png" className="ferret-img" alt="ferret"></img>
+        <div style={{ position: "relative", height: "500px", width: "700px" }}>
+          <MainContainer className="main-ctn">
+            <ChatContainer className="chat-ctn">
+              <MessageList
+                className="msg-list"
+                scrollBehavior="smooth"
+                typingIndicator={
+                  isTyping ? (
+                    <TypingIndicator content="Ferrett is typing" />
+                  ) : null
+                }
+              >
+                {messages.map((message, i) => {
+                  return <Message key={i} model={message} className="message"/>;
+                })}
+              </MessageList>
+              <MessageInput placeholder="Type message here" onSend={handleSend} className="msg-input"/>
+            </ChatContainer>
+          </MainContainer>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
