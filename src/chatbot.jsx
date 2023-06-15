@@ -103,8 +103,10 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <div style={{ position: "relative", height: "800px", width: "700px" }}>
+    <div className="chatbot-page">
+      <h1 className="app-header">Ask Ferrett</h1>
+      <img src="https://easydrawingguides.com/wp-content/uploads/2020/12/Ferret-Step-10.png" className="ferret-img" alt="ferret"></img>
+      <div style={{ position: "relative", height: "500px", width: "700px" }}>
         <MainContainer>
           <ChatContainer>
             <MessageList
@@ -116,8 +118,7 @@ function App() {
               }
             >
               {messages.map((message, i) => {
-                console.log(message);
-                return <Message key={i} model={message} />;
+                return <Message key={i} model={message} className="typing-text"/>;
               })}
             </MessageList>
             <MessageInput placeholder="Type message here" onSend={handleSend} />

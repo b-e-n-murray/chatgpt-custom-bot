@@ -40,3 +40,18 @@
 .read-the-docs {
   color: #888;
 }
+
+.chatbot-page {
+  display: flex;
+}
+
+.ferret-img {
+  height: 400px;
+  width: 400px;
+  margin-right: 70px;
+  transform: scaleX(-1);
+}
+
+.app-header {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
