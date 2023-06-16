@@ -59,6 +59,9 @@ function App() {
     if (API_KEY === undefined) {
       console.log("api key not defined");
       setIsTyping(false);
+      alert(
+        "Oops, Ferrett is experiencing some tecnhical difficulties. Please consult Ben to get back up and running."
+      );
     } else {
       let apiMessages = chatMessages.map((messageObject) => {
         let role = "";
