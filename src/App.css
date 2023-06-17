@@ -1,11 +1,6 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  text-align: center;
-}
-
 .chatbot-page {
   display: flex;
+  justify-content: center;
 }
 
 .ferret-img {
@@ -18,19 +13,8 @@
 .app-header {
   font-family: "Cherry Bomb One", cursive;
   font-size: 80px;
-  color: rgb(85, 32, 32);
-  margin-top: none;
-  text-shadow: 2px;
-}
-
-.main-ctn {
-}
-
-.chat-ctn {
-}
-
-.message {
-}
-
-.msg-input {
+  color: rgb(81, 39, 39);
+  text-align: center;
+  border: 1px solid black;
+  background-color: rgba(124, 203, 231, 0.751);
 }
