@@ -1,11 +1,6 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  text-align: center;
-}
-
 .chatbot-page {
   display: flex;
+  justify-content: center;
 }
 
 .ferret-img {
@@ -21,6 +16,7 @@
   color: rgb(85, 32, 32);
   margin-top: none;
   text-shadow: 2px;
+  text-align: center;
 }
 
 .main-ctn {
