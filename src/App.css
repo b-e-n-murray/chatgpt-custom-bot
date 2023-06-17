@@ -13,20 +13,8 @@
 .app-header {
   font-family: "Cherry Bomb One", cursive;
   font-size: 80px;
-  color: rgb(85, 32, 32);
-  margin-top: none;
-  text-shadow: 2px;
+  color: rgb(81, 39, 39);
   text-align: center;
-}
-
-.main-ctn {
-}
-
-.chat-ctn {
-}
-
-.message {
-}
-
-.msg-input {
+  border: 1px solid black;
+  background-color: rgba(124, 203, 231, 0.751);
 }
